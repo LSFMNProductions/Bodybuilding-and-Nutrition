@@ -9,79 +9,98 @@
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #0d0d0d;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 0;
+      background: #ffffff;
+      color: #111;
       line-height: 1.6;
     }
 
     header {
-      background: #1f1f1f;
+      background: #f9f9f9;
       padding: 2rem;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     header h1 {
       margin: 0;
       font-size: 2.5rem;
-      color: #ff4444;
+      color: #222;
     }
 
     nav {
       display: flex;
       justify-content: center;
-      background: #111;
+      background: #eeeeee;
       padding: 1rem 0;
     }
 
     nav a {
       margin: 0 1rem;
-      color: #aaa;
+      color: #333;
       text-decoration: none;
-      transition: color 0.3s;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
     }
 
     nav a:hover {
-      color: #fff;
+      color: #007aff;
+      transform: scale(1.05);
     }
 
     .section {
-      padding: 2rem;
-      max-width: 900px;
+      padding: 3rem 2rem;
+      max-width: 1000px;
       margin: auto;
     }
 
     .section h2 {
-      color: #ff4444;
+      color: #007aff;
+      font-size: 2rem;
       margin-bottom: 1rem;
     }
 
     img {
       max-width: 100%;
-      border-radius: 10px;
-      margin: 1rem 0;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.02);
     }
 
     .card {
-      background: #1a1a1a;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 68, 68, 0.1);
+      background: #f4f4f4;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      padding-left: 1.5rem;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
-      background: #111;
-      color: #888;
-      margin-top: 3rem;
+      background: #f0f0f0;
+      color: #666;
+      margin-top: 4rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -100,11 +119,11 @@
   <div class="section" id="nutrition">
     <h2>🍗 Nutrition & Macros</h2>
     <div class="card">
-      <p>Nutrition is the backbone of muscle growth. You need a proper balance of macronutrients:</p>
+      <p>Nutrition is the foundation of muscle growth. Understanding your macronutrients is key:</p>
       <ul>
-        <li><strong>Protein</strong> — the building block of muscle (1g per pound of bodyweight)</li>
-        <li><strong>Carbs</strong> — fuel for energy and performance</li>
-        <li><strong>Fats</strong> — crucial for hormones and joint health</li>
+        <li><strong>Protein</strong>: Builds and repairs muscle tissue</li>
+        <li><strong>Carbs</strong>: Your primary energy source</li>
+        <li><strong>Fats</strong>: Vital for hormone production and joint health</li>
       </ul>
       <img src="https://images.unsplash.com/photo-1589927986089-35812388d1a4?auto=format&fit=crop&w=1470&q=80" alt="Healthy Bodybuilding Food" />
     </div>
@@ -113,8 +132,14 @@
   <div class="section" id="training">
     <h2>🏋️‍♂️ Lifting Weights</h2>
     <div class="card">
-      <p>To build muscle, you must lift progressively heavier weights over time — a concept called <strong>progressive overload</strong>.</p>
-      <p>Compound movements like squats, deadlifts, and bench press are essential. They recruit the most muscle fibers.</p>
+      <p>Progressive overload is the golden rule. Focus on gradually increasing the weight and intensity of your workouts.</p>
+      <p>Base your workouts on compound lifts like:</p>
+      <ul>
+        <li>Squats</li>
+        <li>Deadlifts</li>
+        <li>Bench Press</li>
+        <li>Pull-ups</li>
+      </ul>
       <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1470&q=80" alt="Man lifting weights" />
     </div>
   </div>
@@ -122,27 +147,34 @@
   <div class="section" id="styles">
     <h2>📊 Training Styles</h2>
     <div class="card">
+      <p>There are several approaches to weight training depending on your goals:</p>
       <ul>
-        <li><strong>Hypertrophy (8-12 reps)</strong> — Best for muscle growth</li>
-        <li><strong>Strength (4-6 reps)</strong> — For raw power and CNS adaptation</li>
-        <li><strong>Endurance (15+ reps)</strong> — Improves stamina and lean tone</li>
+        <li><strong>Hypertrophy (8-12 reps)</strong>: Maximizes muscle size</li>
+        <li><strong>Strength (4-6 reps)</strong>: Focuses on maximum force output</li>
+        <li><strong>Endurance (15+ reps)</strong>: Builds stamina and definition</li>
       </ul>
-      <p>Mixing styles throughout your year (called periodization) helps avoid plateaus.</p>
-      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07d?auto=format&fit=crop&w=1470&q=80" alt="Gym training styles chart" />
+      <p>Smart lifters rotate styles in a technique known as periodization.</p>
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07d?auto=format&fit=crop&w=1470&q=80" alt="Training styles chart" />
     </div>
   </div>
 
   <div class="section" id="steroids">
     <h2>💉 Why Do People Use Steroids?</h2>
     <div class="card">
-      <p>Steroids are synthetic hormones that increase muscle mass and recovery speed. However, they come with <strong>serious side effects</strong> like heart damage, hormonal imbalance, and liver issues.</p>
-      <p>Natural bodybuilding is a safer long-term path, even though progress is slower.</p>
+      <p>Performance-enhancing drugs like steroids help speed up muscle recovery and growth. But they also pose serious risks:</p>
+      <ul>
+        <li>Hormonal imbalance</li>
+        <li>Heart disease</li>
+        <li>Liver and kidney strain</li>
+        <li>Psychological effects</li>
+      </ul>
+      <p>Many choose the natural path for health, ethics, and long-term sustainability.</p>
       <img src="https://images.unsplash.com/photo-1600718371676-375b02e968ad?auto=format&fit=crop&w=1470&q=80" alt="Steroid vials" />
     </div>
   </div>
 
   <footer>
-    Made with 💪 by LSFMN Productions — Stay strong, stay smart.
+    Made with 💪 by LSFMN Productions — Your strength journey starts here.
   </footer>
 </body>
 </html>
